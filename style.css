@@ -1,0 +1,138 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #A4E1E4;
+  margin: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 3px solid darkseagreen;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#instructions {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#container {
+  background-color: white;
+  margin-left: 20%;
+  margin-right:20%;
+  padding: 10px;
+  border-radius: 20px;
+  float: center;
+  
+  z-index: 1;
+  
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input {
+  background: none;
+    font-family: inherit;
+    padding: 0px 17px;
+    height: 48px;
+    border: 1px solid #212121;
+    outline: none;
+    width: 350px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: #212121;
+}
+input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  border-radius: 6px;
+  animation: fadeInAnimation ease-in-out 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+button {
+  appearance: none;
+  background-color: transparent;
+  border: 1x solid #212121;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 20px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+/*   width: 15%; */
+  will-change: transform;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+button:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+/* Shake Attribute code */
+.applyShake{
+  animation: shake 0.5s; 
+  animation-iteration-count: 3;
+}
+@keyframes shake{
+  0% { transform: translateX(0) };
+ 25% { transform: translateX(5px) };
+ 50% { transform: translateX(-5px) };
+ 75% { transform: translateX(5px) };
+ 100% { transform: translateX(0) };
+}

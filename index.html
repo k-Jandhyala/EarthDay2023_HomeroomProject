@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CCA Earth Day Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div id='container'>
+    <h1>Welcome to CCA's Earth Day Game</h1>
+<!--     <h3>Teachers, please remember to send a screenshot of your score to <a
+        href="mailto:tanner.kortman@sduhsd.net">tanner.kortman@sduhsd.net</a></h2> -->
+
+      <div id="enterName" >
+        <label for="name">Enter teacher full name: </label>
+        <input type='text' placeholder="ex: John Smith" id='name'>
+        <button id='submit'>Submit</button>
+      </div>
+
+      <!--Change the screen after pressing the submit button-->
+
+      <div id="instructions" style="display: none;">
+        <h3>This game was created in celebration of Earth Day 2023 by students Koushik Jandhyala, Aiden Tabrizi, and
+          Sarah Gao in Homeroom Committee. <br> <br>Click the "Next" button to advance to the directions page.</h3>
+        <button id='advanceToDemoPage'>Next</button>
+      </div>
+
+      <div id='demo' style="display: none;">
+        <!--     Add gif of how to play game -->
+        <button id='advanceToGamePage'>Next</button>
+      </div>
+
+      <div id="game" style="display: none;">
+        <!--     Design game, end game button. The game has items that can be recycled and stuff that cannot-->
+        <button id='endGame_advanceToScores'>End the game</button>
+      </div>
+
+      <div id='scoreScreen' style="display: none;">
+        <!--     make the score screen -->
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
